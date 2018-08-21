@@ -1,0 +1,226 @@
+
+/* Selector universal */
+/* *{
+  width:: ancho;
+  height: alto;
+  padding:10px 13px 5px 15px;
+  padding-top:
+  padding-right:
+  padding-left:
+  padding-bottom:
+  margin: 10px;
+  margin-top:
+  margin-right:
+  margin-left:
+  margin-bottom:
+  border: 2px dashed red;
+} */
+
+/* selector de etiqueta */
+body{
+ font-family: 'Allerta', sans-serif; /*fuente de google font */
+ margin: 0;
+}
+table{
+  width: 100%;
+}
+th{
+  background: #273b47;
+  color: white;
+}
+td{
+  padding: 20px;
+}
+th{
+  padding: 10px 20px;
+  text-align: left;
+}
+table,td,th{
+  border: 1px solid #273b47;
+  border-collapse: collapse;
+}
+input, textarea{
+  outline: 0;
+}
+input:focus, textarea:focus{
+  background: lightgray;
+}
+/* selector de clase */
+.background{
+  background-image: url("../Images/background.png");
+  background-size: cover;
+}
+.contenedor{
+  width: 800px;
+  margin:auto;
+  position: relative;
+}
+
+.button{
+  border-radius: 12px;
+  background: #fd324e;
+  color:white;
+  border:none;
+  padding: 7px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  front-size: 18px;
+  background: linear-gradient(to left, #fe344e, #ff7250); /* http://www.colorzilla.com/gradient-editor/  */
+}
+.menu{
+  font-size: 24px;
+   display: inline-block; /*bloque en la misma linea */
+   position: absolute;
+   right: 0;
+}
+.logo{
+  display: inline-block;
+  margin-left: 0;
+}
+.titulo{
+  font-size: 70px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0;
+  margin-top: 70px;
+}
+.titulo span{
+  text-decoration: underline;
+}
+.title-a{
+  font-size: 24px;
+  margin-top: 0;
+}
+.title-b{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.guitarras{
+  color: #1F313C;
+  margin-bottom: 60px;
+
+}
+.portada{
+  color: white;
+  padding: 20px;
+  height: 500px;
+}
+
+/* selector descendente */
+.guitarras h2{
+  font-size: 35px;
+  font-family: 'Montserrat', sans-serif;
+}
+.menu li{
+  display: inline-block;
+  margin-left: 30px;
+}
+/* Pseudoelemento */
+.menu li:before{  /* https://dev.w3.org/html5/html-author/charref */
+  content: "∘";
+  front-size: 50px;
+  line-height: 20px;
+  color: white;
+}
+.menu a{
+  color: white;
+  text-decoration: none;
+}
+.portada button{
+  margin-bottom: 70px;
+}
+.guitarra{
+  margin: 10px 10px 30px 10px;
+  padding: 10px;
+  /* clear: both;
+  overflow: hidden; encaudra todo dentro del contenedor*/
+  border: 1px solid #1F313C;
+  border-radius: 8px;
+}
+.izquierda{
+  float: left;
+  position: relative;
+}
+.derecha{
+  float: right;
+  position: relative;
+  top: -153px;
+}
+.contenedor-guitarraA{
+  padding-left: 10px;
+  margin-top: -27px;
+
+}
+.contenedor-guitarraC{
+  margin-left: 370px;
+  position: relative;
+  bottom: 80px;
+}
+.guitarra.b{
+  height: 190px;
+}
+.header{
+  position: relative;
+}
+.footer{
+  background: #273b47;
+  padding: 50px 10px;
+}
+.contacto{
+  display: flex;
+  width:300px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.contacto img{
+  display: block;
+}
+.contacto strong{
+  display: block;
+}
+.contacto a{
+  margin: 10px 10px 10px 0;
+  color: white;
+  text-decoration: none;
+}
+.footer .contenedor{
+  display: flex;
+  justify-content: space-between;
+}
+
+.formulario{
+  display: flex;
+  width: 400px;
+  color: white;
+}
+.col1, .col2{
+  display: flex;
+  flex-direction: column;
+
+}
+.col1{
+  margin-right: 15px;
+}
+.col2{
+  align-items: flex-start;
+}
+.col2 .button{
+  margin-top: 15px;
+}
+.intereses label{
+  font-size: 11px;
+}
+.formulario label .sexo .intereses{
+  margin-bottom: 10px;
+}
+.sexo{
+  margin-top: 10px;
+}
+.tabla{
+  margin: 50px 0;
+}
+
+/* selector id */
+
+/* #guitarras {
+  border: 3px solid brown;
+}
